@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+/* 
+
+1. grey : #eceff1
+  grey : rgb(175, 186, 186)
+2. shade of white: #f4f4f4
+3. text color: #22566b , #000
+4. red : rgb(167, 38, 75) 
+5. font: Roboto Mono
+
+
+*/
+
+/* ! GENERAL CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background-color: rgb(207, 78, 115);
+  margin: 3% 0;
+}
+
+h1,
+h3 {
+  text-transform: uppercase;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 5%;
+  color: #22566b;
+}
+
+h5 {
+  color: rgb(167, 38, 75);
+  font-size: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+i {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+
+/* ! CONTAINER */
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  border: 1px solid rgb(167, 38, 75);
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-color: #fff;
+    margin: 0;
+  }
+
+  .container {
+    width: 100%;
+    border: none;
+    font-size: 0.5em;
+  }
+}
+
+/* ! SIDE CONTAINER */
+
+.side-container {
+  width: 40%;
+  background-color: rgb(224, 224, 224);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 0;
+}
+
+.side-container img {
+  width: auto;
+  height: 210px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 35px;
+  margin-top: 10%;
+}
+
+.side-container .sec1,
+.sec2 {
+  width: 70%;
+  margin: 0 auto;
+  color: #22566b;
+  margin-bottom: 10%;
+}
+
+.sec1 h3 {
+  margin-bottom: 8%;
+}
+
+.sec2 h3 {
+  margin-bottom: 8%;
+}
+
+.side-container .sec1-lists {
+  color: #000;
+}
+
+.sec1-lists ul li::before {
+  content: "\2022";
+  color: #22566b;
+}
+
+.sec1-lists p {
+  margin-left: 15px;
+  margin-top: 5px;
+  font-size: 1em;
+}
+
+@media (max-width: 480px) {
+  .side-container {
+    padding: 0;
+  }
+
+  .side-container img {
+    height: 180px;
+    margin-bottom: 15px;
+  }
+}
+
+.award-lists li {
+  margin-top: 10px;
+}
+
+.side-container .sec2-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+/* HOPPIES */
+
+.hobby-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.hobby-icons a {
+  margin-right: 7%;
+  font-size: 1em;
+}
+
+.hobby-icons i {
+  color: rgb(167, 38, 75);
+  margin-right: 4px;
+}
+
+/* CONTACTS */
+.contact-icons a {
+  margin-bottom: 5px;
+}
+
+.side-container .sec2 i {
+  color: rgb(167, 38, 75);
+  font-size: 0.8em;
+  margin-right: 10px;
+}
+
+/* ! MAIN CONTAINER */
+
+.main-container {
+  width: 70%;
+  background-color: #f4f4f4;
+  padding: 3% 0;
+}
+
+.my-name {
+  color: rgb(167, 38, 75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  margin-top: 14%;
+  margin-bottom: 16%;
+}
+
+.my-profile,
+.work-experience,
+.my-skills {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.my-profile,
+.work-experience,
+.my-skills {
+  margin-top: 40px;
+}
+
+.my-profile p {
+  text-indent: 5%;
+}
+
+.work-experience ul li {
+  margin-top: 3%;
+  font-weight: bold;
+}
+
+.work-experience h5 {
+  margin-left: 1%;
+}
+
+.work-experience p {
+  margin-left: 2%;
+}
+
+/* DONUT CHARTS */
+
+.my-skills .donuts {
+  margin-top: 5%;
+}
+
+.my-skills .donuts ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.my-skills ul li {
+  display: inline-block;
+}
+
+.my-skills ul li p {
+  text-align: center;
+  margin: 5% 0;
+}
+
+.donut-1,
+.donut-2,
+.donut-3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.donut-1 {
+  background: conic-gradient(
+    rgb(175, 186, 186) 0deg 30deg,
+    rgb(167, 38, 75) 30deg 360deg
+  );
+}
+
+.donut-2 {
+  background: conic-gradient(
+    rgb(175, 186, 186) 0deg 80deg,
+    rgb(167, 38, 75) 80deg 360deg
+  );
+}
+
+.donut-3 {
+  background: conic-gradient(
+    rgb(175, 186, 186) 0deg 240deg,
+    rgb(167, 38, 75) 240deg 360deg
+  );
+}
+
+/* ! MEDIA QUERY */
